@@ -1,0 +1,104 @@
+* {
+    /* Eliminates L to R scroll on header */
+    box-sizing: border-box;
+}
+*:focus{
+    /* Removes outline when focusing  */
+    outline: none;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00003c;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    /* causes header to hug left and right borders */
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: lightcyan;
+    border-bottom: 2px solid #00003c;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    /* header is 9% of the viewport */
+    height: 9vh; 
+}
+li{
+    /* Places gaps between navbar items */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar{
+    flex-basis: 100%;
+    display: flex;
+    /* removes bullet points */
+    list-style: none;
+    /* centers text vertically */
+    margin: auto;   
+    /* centers text horizontally */
+    justify-content: center; 
+    
+}  
+.navbar-item{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 20px;
+    padding-bottom: 5px;
+    /* Below is for underline transition  */
+    background-image: linear-gradient(#00003c, #00003c);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-in-out;
+}
+.navbar-item:hover,
+.navbar-item:focus,
+.navbar-item:active{
+    background-size: 100% 0.1em;
+    text-decoration: none;
+    color:#00003c;
+}
+a{
+    color: #00003c;
+    text-decoration: none;
+}
+.intro{
+    width: 50%;
+    height: 100vh;
+    /* color: lightcyan; */
+    color: #b3e8f7;
+    margin: auto;
+    align-items: start!important;
+    justify-content: center;
+}
+.line-2{
+    font-size: 72px;
+    text-shadow: 4px 4px 2px #36454f;
+}
+.section{
+    /* Each section takes up minimum the entire viewport */
+    height: 100vh;
+}
+.title{
+    color: #b3e8f7;
+    font-size: 64px;
+    text-shadow: 4px 4px 2px #36454f;
+    padding-top: 9vh;
+    padding-left: 50px;
+}
+.content{
+    color: #b3e8f7;
+    font-size: 22px;
+}
+#about-me-content{
+    display: flex;
+    gap: 80px;
+    padding: 100px 300px 0px 300px
+}
+
+
