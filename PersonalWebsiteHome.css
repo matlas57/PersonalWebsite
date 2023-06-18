@@ -100,5 +100,32 @@ a{
     gap: 80px;
     padding: 100px 300px 0px 300px
 }
+.books-section-intro{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    color: #b3e8f7;
+    padding-top: 25px;
+}
+#books-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding: 100px 300px 0px 300px;
+    gap: 80px;
+    
+    > .grid-item-cover {
+        border: 1px solid #b3e8f7;
+        height: 260px;
+    }
+    > .grid-item-text {
+        font-size: 22px;
+
+        >.book-title{
+            font-size: 29px;
+            text-decoration: underline;
+        }
+    }
+}
 
 
