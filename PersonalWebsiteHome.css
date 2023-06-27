@@ -11,6 +11,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: #00003c;
 }
+/* Hide the scrollbar while still being able to scroll */
+body::-webkit-scrollbar {
+    display: none;
+  }
 html{
     scroll-behavior: smooth;
 }
@@ -103,9 +107,9 @@ a{
 .books-section-intro{
     display: flex;
     font-size: 20px;
-    justify-content: center;
     color: #b3e8f7;
     padding-top: 25px;
+    padding-left: 50px;
 }
 #books-content{
     display: grid;
