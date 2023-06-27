@@ -104,6 +104,9 @@ a{
     gap: 80px;
     padding: 100px 300px 0px 300px
 }
+.books{
+    height: 175vh;
+}
 .books-section-intro{
     display: flex;
     font-size: 20px;
@@ -112,24 +115,34 @@ a{
     padding-left: 50px;
 }
 #books-content{
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
     padding: 100px 300px 0px 300px;
-    gap: 80px;
+    gap: 80px; */
     
-    > .grid-item-cover {
-        border: 1px solid #b3e8f7;
-        height: 260px;
-    }
-    > .grid-item-text {
-        font-size: 22px;
+    
+    > .row {
+        display: flex;
+        flex-direction: row;
+        padding: 100px 300px 0px 300px;
+        > .grid-item-cover {
+            border: 1px solid #b3e8f7;
+            width: 200px;
+            padding: 0%;
+            /* flex-basis: 25%; */
+        }
+        > .grid-item-text {
+            font-size: 22px;
+            flex-basis: 75%;
 
-        >.book-title{
-            font-size: 29px;
-            text-decoration: underline;
+            >.book-title{
+                font-size: 29px;
+                text-decoration: underline;
+            }
         }
     }
+    
 }
 
 
