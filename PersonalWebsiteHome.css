@@ -14,7 +14,7 @@ body{
 /* Hide the scrollbar while still being able to scroll */
 body::-webkit-scrollbar {
     display: none;
-  }
+}
 html{
     scroll-behavior: smooth;
 }
@@ -52,6 +52,8 @@ li{
     display: inline-block;
     font-size: 20px;
     padding-bottom: 5px;
+    color: #00003c;
+    text-decoration: none;
     /* Below is for underline transition  */
     background-image: linear-gradient(#00003c, #00003c);
     background-size: 0% 0.1em;
@@ -67,9 +69,20 @@ li{
     text-decoration: none;
     color:#00003c;
 }
+.fixed-socials-links{
+    position: fixed;
+    border: 1px solid #b3e8f7;
+    fill: black;
+    width: 1px;
+    height: 100px;
+    bottom: 0;
+    right: 40px;
+}
+.logo{
+    fill: #b3e8f7
+}
 a{
-    color: #00003c;
-    text-decoration: none;
+    color: #b3e8f7;
 }
 .intro{
     width: 50%;
@@ -103,6 +116,12 @@ a{
     display: flex;
     gap: 80px;
     padding: 100px 300px 0px 300px
+}
+.headshot{
+    width: 200px
+}
+.section-projects{
+    height: 180vh
 }
 .section-books{
     height: 175vh;
