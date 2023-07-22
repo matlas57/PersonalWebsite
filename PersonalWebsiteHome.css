@@ -78,8 +78,17 @@ li{
     bottom: 0;
     right: 40px;
 }
+.logo-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: -15px;
+    top: -115px;
+    gap: 10px;
+}
 .logo{
-    fill: #b3e8f7
+    filter: invert(93%) sepia(5%) saturate(2691%) hue-rotate(162deg) brightness(92%) contrast(111%);
+    width: 30px;
 }
 a{
     color: #b3e8f7;
@@ -97,7 +106,7 @@ a{
     font-size: 72px;
     text-shadow: 4px 4px 2px #36454f;
 }
-.section{
+.section-about-me{
     /* Each section takes up minimum the entire viewport */
     height: 100vh;
 }
@@ -174,6 +183,31 @@ a{
                 text-decoration: underline;
             }
         }
+    }
+}
+.section-resume{
+    height: 100vh;
+}
+.resume-content{
+    display: flex;
+    gap: 250px;
+    justify-content: center;
+    padding-top: 50px;
+    color: #b3e8f7
+}
+.resume-column{
+    width: 376px;
+}
+.subtitle{
+    font-size: 29px;
+    border-bottom: 2px solid #b3e8f7;
+    margin-bottom: 25px;
+}
+.list-title{
+    font-size: 23px;
+
+    >.list-subtitle{
+        font-size: 16px;
     }
 }
 
