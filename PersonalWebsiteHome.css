@@ -47,6 +47,19 @@ li{
     justify-content: center; 
     
 }  
+.m-logo{
+    position: absolute;
+    left: 35px;
+    top: -5px;
+    background-color: #00003c;
+    color: #b3e8f7!important;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 38px!important;
+    display: flex!important;
+    justify-content: center;
+}
 .navbar-item{
     overflow: hidden;
     display: inline-block;
