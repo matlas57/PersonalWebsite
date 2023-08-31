@@ -122,7 +122,7 @@ li{
     text-decoration: none;
     color:#00003c;
 }
-.fixed-socials-links{
+.fixed-position-socials-links{
     position: fixed;
     border: 1px solid #b3e8f7;
     fill: black;
@@ -264,6 +264,16 @@ a{
     >.list-subtitle{
         font-size: 16px;
     }
+}
+.section-contact{
+    height: 44vh;
+
+}
+.contact-information{
+    font-size: 20px;
+    color: #b3e8f7;
+    padding-top: 25px;
+    padding-left: 50px;
 }
 
 
