@@ -136,7 +136,7 @@ li{
     display: flex;
     flex-direction: column;
     left: -15px;
-    top: -115px;
+    top: -155px;
     gap: 10px;
 }
 .logo{
@@ -183,13 +183,13 @@ a{
     width: 200px
 }
 .section-projects{
-    height: 180vh
+    height: 195vh
 }
 .section-books{
-    height: 175vh;
+    height: 185vh;
 }
 .section-intro{
-    display: flex;
+    /* display: flex; */
     font-size: 20px;
     color: #b3e8f7;
     padding-top: 25px;
