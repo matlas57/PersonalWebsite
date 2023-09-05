@@ -20,7 +20,6 @@ html{
 }
 .header{
     /* causes header to hug left and right borders */
-    position: fixed; 
     top: 0; 
     left: 0;
     width: 100%;
@@ -29,7 +28,7 @@ html{
     padding-top: 20px;
     padding-bottom: 15px;
     /* header is 9% of the viewport */
-    height: 9vh; 
+    height: 92px; 
 }
 li{
     /* Places gaps between navbar items */
@@ -89,7 +88,7 @@ li{
     /* slide in from left on logo hover */
     /* display: none;  */
     position: absolute;
-    left: -130px;
+    left: -125px;
     top: 0px;
     color: #00003c;
     font-size: 32px;
@@ -147,13 +146,9 @@ a{
     color: #b3e8f7;
 }
 .intro{
-    width: 50%;
     height: 100vh;
-    /* color: lightcyan; */
     color: #b3e8f7;
-    margin: auto;
     align-items: start!important;
-    justify-content: center;
 }
 .line-2{
     font-size: 72px;
