@@ -172,16 +172,17 @@ a{
 #about-me-content{
     display: flex;
     gap: 80px;
-    padding: 100px 300px 0px 300px
+    /* padding-top: 100px; */
 }
 .headshot{
-    width: 200px
+    width: 200px;
+    height: 300px;
 }
 .section-projects{
-    height: 195vh
+    height: 185vh
 }
 .section-books{
-    height: 185vh;
+    height: 245vh;
 }
 .section-intro{
     /* display: flex; */
@@ -198,24 +199,33 @@ a{
     gap: 80px; */
     
     
+    
     > .row {
         display: flex;
         flex-direction: row;
-        padding: 100px 300px 0px 300px;
+        gap: 80px;
+        /* padding: 100px 300px 0px 300px; */
+        margin: 100px 150px 0px 150px;
         > .grid-item-cover {
             border: 1px solid #b3e8f7;
             width: 200px;
             padding: 0%;
-            /* flex-basis: 25%; */
+            flex-basis: 20%;
+        }
+        > #splendor-cover {
+            max-width: 40%;
+            height: auto;
         }
         > .project-grid-item-cover {
             border: 1px solid #b3e8f7;
-            width: 500px;
+            width: 490px;
             padding: 0%;
+            min-height: auto;
+            max-height: 300px;;
         }
         > .grid-item-text {
             font-size: 22px;
-            flex-basis: 75%;
+            flex-basis: 60%;
 
             >.book-title{
                 font-size: 29px;

@@ -66,7 +66,7 @@
         </div>
         <div class="line-from-bottom"></div>
     </div>
-    <div class="col mx-auto">
+    <div class="intro container mx-auto">
         <!-- Current setup looks good in layouts md+ -->
         <div class="intro d-flex flex-column justify-content-center col-10 mx-auto"> 
             <div class="line-1 fs-3">
@@ -85,14 +85,14 @@
     </div>
     <div class="section-about-me">
         <div class="title" id="about-me">
-        About me
+            About me
         </div>
-        <div class="content" id="about-me-content">
-            <div class="text">
-                Hi, my name is Matan. I am a passionate engineer that enjoys creating, learning, and optimizing. My passion for programming started at the National High School Game Academy at Carnegie Mellon University in 2018. From the projects there I fell in love with the process of building and improving, seeing my creations improve incrementally inspired me to keep working towards my goals. This love for improving then spread to all aspects of my life, motivating me to work every day to improve one aspect of my life each and every day.
-                <br><br>P.S. I also love climbing. <a href="https://www.youtube.com/watch?v=5c24iR5v1ic&ab_channel=LoiDuongJr." target="_blank">Here</a> is a video of my hardest climb I've ever done.
+        <div class="content container pt-xl-5 pt-lg-4 pt-md-4 ps-xl-3 ps-md-5" id="about-me-content">
+            <div class="text text-center text-md-start">
+                Hi, my name is Matan. I am a passionate engineer that enjoys creating, learning, and optimizing. My passion for programming started at the National High School Game Academy at Carnegie Mellon University in 2018. From the projects there I fell in love with the process of building and improving, seeing my creations improve incrementally inspired me to keep working towards my goals. This love for improving then spread to all aspects of my life, motivating me to work to improve one aspect of my life each and every day.
+                <br><br>P.S. I also love climbing. <a href="https://www.youtube.com/watch?v=5c24iR5v1ic&ab_channel=LoiDuongJr." target="_blank">Here</a> is a video of the hardest climb I've ever done.
             </div>
-            <img class="headshot" src="/Users/matanatlas/Pictures/Headshots/HeadshotCurrent.jpg" alt="" class="image">
+            <img class="headshot d-none d-md-inline" src="/Users/matanatlas/Pictures/Headshots/HeadshotCurrent.jpg" alt="" class="image">
         </div>
     </div>
     <div class="section-projects">
@@ -100,11 +100,11 @@
             Projects
         </div>
         <div class="projects section-intro">Below are some of my favorite projects I've worked on in the past few years</div>
-        <div class="content grid-container" id="projects-content">
+        <div class="content grid-container justify-content-center" id="projects-content">
             <div class="row">
-                <img class="project-grid-item-cover" src="./images/SplendorScreenshot.JPG">
+                <img class="project-grid-item-cover" id="splendor-cover" src="./images/SplendorScreenshot.JPG">
                 
-                <div class="project-grid-item-text">
+                <div class="project-grid-item-text" id="splendor-text">
                     <div class="project-title">Splendor</div>
                     <div class="text">
                         Splendor is a card game where players compete to build Renaissance Europe's most lucrative jewelry business by acquiring gems, purchasing mines, and gaining the favor of nobles. This implementation of Splendor was implemented with a Java backend and a JavaFX frontend, we used technologies such as REST, Docker, Maven, and Git in developing it as part of our year-long project for COMP 361 at McGill University. Feel free to try it out for yourself 
@@ -310,6 +310,8 @@
             You can also find me on GitHub, LinkedIn, and Instagram through the links on the right &rarr;.
         </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="PersonalWebsiteHome.js"></script>
 </body>
+
 </html>
