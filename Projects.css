@@ -1,0 +1,56 @@
+/* Responsive Section height */
+.section-projects {
+    height: 165vh;
+}
+@media screen and (min-width: 1300px) {
+    .section-projects {
+        height: 240vh;
+    }
+}
+@media screen and (min-width: 1340px) {
+    .section-projects {
+        height: 235vh;
+    }
+}
+@media screen and (min-width: 1409px) {
+    .section-projects {
+        height: 225vh;
+    }
+}
+@media screen and (min-width: 1488px) {
+    .section-projects {
+        height: 220vh;
+    }
+}
+@media screen and (min-width: 1638px) {
+    .section-projects {
+        height: 210vh;
+    }
+}
+
+/* Responsive Cover sizes */
+.project-grid-item-cover {
+    display: none;
+}
+@media screen and (min-width: 1300px) {
+    .project-grid-item-cover {
+        display: inline;
+        width : 420px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .project-grid-item-cover {
+        display: inline;
+        width : 490px;
+    }
+}
+/* Responsive Text flex-basis */
+.project-grid-item-text {
+    flex-basis: 100%;
+}
+@media screen and (min-width: 1300px) {
+    .project-grid-item-text {
+        flex-basis: 50%;
+    }
+}
