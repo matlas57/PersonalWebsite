@@ -1,6 +1,6 @@
 /* Responsive Section height */
 .section-projects {
-    height: 165vh;
+    height: 185vh;
 }
 @media screen and (min-width: 1300px) {
     .section-projects {

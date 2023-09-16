@@ -1,0 +1,25 @@
+.section-about-me{
+    height: 100vh;
+}
+#about-me-content{
+    display: flex;
+    gap: 80px;
+    /* padding-top: 100px; */
+}
+@media screen and (max-width: 585px) {
+    #about-me-content{
+        padding: 0px 35px 0px 35px;
+    }
+}
+#about-me-text{
+    text-align: justify!important;
+}
+@media screen and (max-width: 767px) {
+    #about-me-text{
+        padding-top: 50px;
+    }
+}
+.headshot{
+    width: 200px;
+    height: 300px;
+}

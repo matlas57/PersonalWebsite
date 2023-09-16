@@ -1,18 +1,11 @@
-$(window).resize(function() {
-    if ($(window).width() < 992) { 
-        console.log("grow")
-        $(".section-about-me").css("height", "140vh");
-    } else {
-        $(".section-about-me").css("height", "100vh");
-    }
-});
-$(window).resize(function() {
-    if ($(window).width() < 992) { 
-        $(".section-about-me").css("height", "140vh");
-    } else {
-        $(".section-about-me").css("height", "100vh");
-    }
-});
+
+// $(window).resize(function() {
+//     if ($(window).width() < 992) { 
+//         $(".section-about-me").css("height", "140vh");
+//     } else {
+//         $(".section-about-me").css("height", "100vh");
+//     }
+// });
 // $(window).resize(function() {
 //     if ($(window).width() < 1800) { 
 //         $(".section-projects").css("height", "300vh");

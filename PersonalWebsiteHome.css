@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Hides horizontal scrollbar */
 }
 .header{
     /* causes header to hug left and right borders */
@@ -114,6 +115,24 @@ li{
     background-repeat: no-repeat;
     transition: background-size 0.5s ease-in-out;
 }
+@media screen and (max-width: 548px) {
+    .navbar-item{
+        font-size: 16px!important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .navbar-item{
+        font-size: 18px;
+    }
+    .m-logo, .m-name{
+        display: none!important;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .m-name{
+        display: none!important;
+    }
+}
 .navbar-item:hover,
 .navbar-item:focus,
 .navbar-item:active{
@@ -138,6 +157,16 @@ li{
     top: -155px;
     gap: 10px;
 }
+@media screen and (max-width: 650px) {
+    .logo-container{
+        flex-direction: row;
+        left: -120px;
+        top: 55px;
+    }
+    .fixed-position-socials-links{
+        border: none;
+    }
+}
 .logo{
     filter: invert(93%) sepia(5%) saturate(2691%) hue-rotate(162deg) brightness(92%) contrast(111%);
     width: 30px;
@@ -154,10 +183,7 @@ a{
     font-size: 72px;
     text-shadow: 4px 4px 2px #36454f;
 }
-.section-about-me{
-    /* Each section takes up minimum the entire viewport */
-    height: 100vh;
-}
+
 .title{
     color: #b3e8f7;
     font-size: 64px;
@@ -168,18 +194,6 @@ a{
 .content{
     color: #b3e8f7;
     font-size: 22px;
-}
-#about-me-content{
-    display: flex;
-    gap: 80px;
-    /* padding-top: 100px; */
-}
-.headshot{
-    width: 200px;
-    height: 300px;
-}
-.section-projects{
-    height: 185vh
 }
 .section-books{
     height: 245vh;
