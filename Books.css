@@ -1,0 +1,34 @@
+#books-content {
+    > .row{
+        > .grid-item-cover {
+            flex-basis: 15%;
+        }
+        > .grid-item-text {
+            flex-basis: 70%;
+        }
+    }
+}
+.book-title{
+    text-align: left!important;
+}
+/* responsive rows section */
+#books-content {
+    > .row {
+        @media screen and (max-width: 1299px) {
+            > .grid-item-cover {
+                display: none;
+            }
+            >.grid-item-text{
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+/* responsive height section */
+@media screen and (min-width: 1299px) {
+    .section-books {
+        height: 220vh;
+    }
+}
+
+

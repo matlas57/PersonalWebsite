@@ -1,6 +1,61 @@
-/* Responsive Section height */
+/* #region Responsive projects section height */
 .section-projects {
-    height: 185vh;
+    height: 275vh;
+}
+@media screen and (min-width: 545px) {
+    .section-projects {
+        height: 280vh;
+    }
+}
+@media screen and (min-width: 584px) {
+    .section-projects {
+        height: 260vh;
+    }
+}
+@media screen and (min-width: 670px) {
+    .section-projects {
+        height: 230vh;
+    }
+}
+@media screen and (min-width: 714px) {
+    .section-projects {
+        height: 220vh;
+    }
+}
+@media screen and (min-width: 748px) {
+    .section-projects {
+        height: 210vh;
+    }
+}
+@media screen and (min-width: 801px) {
+    .section-projects {
+        height: 240vh;
+    }
+}
+@media screen and (min-width: 854px) {
+    .section-projects {
+        height: 225vh;
+    }
+}
+@media screen and (min-width: 895px) {
+    .section-projects {
+        height: 210vh;
+    }
+}
+@media screen and (min-width: 985px) {
+    .section-projects {
+        height: 190vh;
+    }
+}
+@media screen and (min-width: 1053px) {
+    .section-projects {
+        height: 180vh;
+    }
+}
+@media screen and (min-width: 1168px) {
+    .section-projects {
+        height: 170vh;
+    }
 }
 @media screen and (min-width: 1300px) {
     .section-projects {
@@ -9,28 +64,31 @@
 }
 @media screen and (min-width: 1340px) {
     .section-projects {
-        height: 235vh;
+        height: 230vh;
     }
 }
 @media screen and (min-width: 1409px) {
     .section-projects {
-        height: 225vh;
+        height: 220vh;
     }
 }
 @media screen and (min-width: 1488px) {
     .section-projects {
-        height: 220vh;
-    }
-}
-@media screen and (min-width: 1638px) {
-    .section-projects {
         height: 210vh;
     }
 }
+@media screen and (min-width: 1642px) {
+    .section-projects {
+        height: 200vh;
+    }
+}
+/* #endregion */
+
 
 /* Responsive Cover sizes */
 .project-grid-item-cover {
     display: none;
+    
 }
 @media screen and (min-width: 1300px) {
     .project-grid-item-cover {
@@ -42,7 +100,7 @@
 @media screen and (min-width: 1440px) {
     .project-grid-item-cover {
         display: inline;
-        width : 490px;
+        width : 470px;
     }
 }
 /* Responsive Text flex-basis */
@@ -52,5 +110,18 @@
 @media screen and (min-width: 1300px) {
     .project-grid-item-text {
         flex-basis: 50%;
+    }
+}
+@media screen and (min-width: 1680px) {
+    .project-grid-item-text {
+        flex-basis: 60%;
+    }
+}
+
+#projects-content {
+    > .row {
+        > .grid-item-text {
+            font-size: 22px;
+        }
     }
 }

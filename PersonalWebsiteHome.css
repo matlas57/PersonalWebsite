@@ -195,15 +195,13 @@ a{
     color: #b3e8f7;
     font-size: 22px;
 }
-.section-books{
-    height: 245vh;
-}
 .section-intro{
     /* display: flex; */
-    font-size: 20px;
+    font-size: 22px;
     color: #b3e8f7;
     padding-top: 25px;
     padding-left: 50px;
+    padding-right: 50px;
 }
 #books-content, #projects-content{
     /* display: grid;
@@ -218,7 +216,12 @@ a{
         display: flex;
         flex-direction: row;
         gap: 80px;
+        text-align: justify!important;
         /* padding: 100px 300px 0px 300px; */
+        @media screen and (max-width: 800px) {
+            margin: 100px 75px 0px 75px;
+        }
+            
         margin: 100px 150px 0px 150px;
         > .grid-item-cover {
             border: 1px solid #b3e8f7;
@@ -238,7 +241,7 @@ a{
             max-height: 300px;;
         }
         > .grid-item-text {
-            font-size: 22px;
+            /* font-size: 22px; */
             flex-basis: 60%;
 
             >.book-title{
@@ -257,36 +260,8 @@ a{
         }
     }
 }
-.section-resume{
-    height: 100vh;
-}
-.resume-content{
-    display: flex;
-    gap: 250px;
-    justify-content: center;
-    padding-top: 50px;
-    color: #b3e8f7
-}
-.resume-column{
-    width: 376px;
-}
-.subtitle{
-    font-size: 29px;
-    border-bottom: 2px solid #b3e8f7;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-}
-.list-title{
-    font-size: 23px;
-
-    >.list-subtitle{
-        font-size: 16px;
-    }
-}
 .section-contact{
     height: 44vh;
-
 }
 .contact-information{
     font-size: 20px;
@@ -294,5 +269,11 @@ a{
     padding-top: 25px;
     padding-left: 50px;
 }
+@media screen and (max-width: 1100px) {
+    .contact-information{
+        padding-right: 100px;
+    }
+}
+    
 
 

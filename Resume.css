@@ -1,0 +1,72 @@
+.section-resume{
+    height: 130vh;
+}
+.resume-content{
+    /* display: flex; */
+    /* gap: 200px; */
+    /* justify-content: center; */
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    padding: 50px 50px 0px 50px;
+    color: #b3e8f7
+}
+.resume-column{
+    width: 376px;
+    font-size: 18px;
+}
+.courses{
+    grid-row: span 2;
+}
+.subtitle{
+    font-size: 29px;
+    border-bottom: 2px solid #b3e8f7;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+.list-title{
+    font-size: 23px;
+
+    >.list-subtitle{
+        font-size: 16px;
+    }
+}
+
+/* responsive section */
+@media screen and (max-width: 1599px) {
+    .resume-content{
+        gap: 80px;
+    }
+}
+@media screen and (max-width: 1499px) {
+    .resume-content{
+        gap: 70px;
+    }
+    .section-resume{
+        height: 135vh;
+    }
+}
+@media screen and (max-width: 1399px) {
+    .resume-content{
+        gap: 60px;
+    }
+}
+@media screen and (max-width: 1299px) {
+    .resume-content{
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .resume-column{
+        width: 318px;
+    }
+    .resume-content{
+        gap: 10px;
+    }
+    .section-resume{
+        height: 155vh;
+    }
+}
+    
+    
