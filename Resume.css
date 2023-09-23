@@ -1,5 +1,5 @@
 .section-resume{
-    height: 130vh;
+    height: 155vh;
 }
 .resume-content{
     /* display: flex; */
@@ -38,13 +38,16 @@
     .resume-content{
         gap: 80px;
     }
+    .section-resume{
+        height: 165vh;
+    }
 }
 @media screen and (max-width: 1499px) {
     .resume-content{
         gap: 70px;
     }
     .section-resume{
-        height: 135vh;
+        height: 175vh;
     }
 }
 @media screen and (max-width: 1399px) {
@@ -65,7 +68,12 @@
         gap: 10px;
     }
     .section-resume{
-        height: 155vh;
+        height: 180vh;
+    }
+}
+@media screen and (max-width: 800px) {
+    .section-resume{
+        height: 190vh;
     }
 }
     

@@ -274,6 +274,18 @@ a{
         padding-right: 100px;
     }
 }
+
+#unsupported-message{
+    display: none;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
     
 
 
