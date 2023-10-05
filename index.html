@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Matan Atlas, Matan, Atlas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="PersonalWebsiteHome.css">
+    <link rel="stylesheet" href="Projects.css">
+    <link rel="stylesheet" href="AboutMe.css">
+    <link rel="stylesheet" href="Books.css">
+    <link rel="stylesheet" href="Resume.css">
+    <title>Matan Atlas</title>
+</head>
+<body id="body">
+    <div id="supported">
+        <div class="header fixed-top navbar-expand-md">
+            <ul class="navbar">
+                <li class="m-blocking-box"></li>
+                <li class="m-logo">
+                    <a href="#" class="m-logo-btn">M</a>
+                </li>
+                <li class="m-name" id="show-on-hover">
+                    Matan Atlas
+                </li>
+                <li>
+                    <a class="navbar-item" href="#about-me">
+                        About me
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-item" href="./Projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-item" href="./Books.html">
+                        Books
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-item" href="./Resume.html">
+                        Resume
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-item" href="#contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="fixed-position-socials-links">
+            <div class="logo-container">
+                <!-- The icons below are from icons8.com -->
+                <a href="https://github.com/matlas57/Portfolio" target="_blank" rel="noopener noreferrer">
+                    <img class="logo" id="github" src="images/icons8-github.svg"/> 
+                </a>
+                <a href="https://www.linkedin.com/in/matan-atlas-25117b20a/" target="_blank" rel="noopener noreferrer">
+                    <img class="logo" id="linkedin" src="images/icons8-linkedin.svg" alt="">
+                </a>
+                <a href="https://www.goodreads.com/user/show/164423163-matan-atlas" target="_blank" rel="noopener noreferrer">
+                    <img class="logo" id="linkedin" src="images/icons8-goodreads.svg" alt="">
+                </a>
+                <a href="https://www.instagram.com/matan_atlas/" target="_blank" rel="noopener noreferrer">
+                    <img class="logo" id="instagram" src="images/icons8-instagram.svg" alt="">
+                </a>
+            </div>
+            <div class="line-from-bottom"></div>
+        </div>
+        <div class="intro container mx-auto">
+            <!-- Current setup looks good in layouts md+ -->
+            <div class="intro d-flex flex-column justify-content-center col-10 mx-auto"> 
+                <div class="line-1 fs-3">
+                    Hi there, i'm
+                </div>
+                <div class="line-2 fw-bold">
+                    Matan.
+                </div>
+                <div class="line-3 fs-3">
+                    Developer and lifelong learner.  
+                </div>
+                <div class="line-4 col-md-12">
+                    I'm a computer science and psychology student. I strive to develop impactful software and contribute to the technologies of the future.
+                </div>
+            </div>
+        </div>
+        <div class="section-about-me">
+            <div class="title" id="about-me">
+                About me
+            </div>
+            <div class="content container pt-xl-5 pt-lg-4 pt-md-4 ps-xl-3 ps-md-5" id="about-me-content">
+                <div class="text text-center text-md-start" id="about-me-text">
+                    Hi, my name is Matan. I am a passionate engineer that enjoys creating, learning, and optimizing. My passion for programming started at the National High School Game Academy at Carnegie Mellon University in 2018. From the projects there I fell in love with the process of building and improving, seeing my creations improve incrementally inspired me to keep working towards my goals. This love for improving then spread to all aspects of my life, motivating me to work to improve one aspect of my life each and every day.
+                    <br><br>P.S. I also love climbing. <a href="https://www.youtube.com/watch?v=5c24iR5v1ic&ab_channel=LoiDuongJr." target="_blank">Here</a> is a video of the hardest climb I've ever done.
+                </div>
+                <img class="headshot d-none d-md-inline" src="images/HeadshotCurrent.jpg" alt="" class="image">
+            </div>
+        </div>
+        <div class="section-contact">
+            <div class="title" id="contact">
+                Contact
+            </div>
+            <div class="contact section-intro">
+                Thanks for checking out my website. If you would like to contact me send me an&nbsp;<a href="mailto: matanatlas2002@gmail.com">email</a>.
+            </div>
+            <div class="contact-information">
+                You can also find me on GitHub, LinkedIn, Goodreads, and Instagram through the links on the right &rarr;.
+            </div>
+        </div>
+    </div>
+    <div id="unsupported-message">
+        <div class="unsupported-message">
+            <div class="unsupported-message-title">
+                Unsupported Window Width
+            </div>
+            <div class="unsupported-message-text">
+                This website is not supported on mobile devices. Please view it on a desktop or laptop computer.
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        function checkWindowSize() {
+            const unsupportedMessage = document.getElementById('unsupported-message');
+            const supportedContent = document.getElementById('supported');
+
+            if (window.innerWidth < 768 || window.innerHeight < 768) {
+                // Display the unsupported message and hide supported content
+                unsupportedMessage.style.display = 'block';
+                supportedContent.style.display = 'none';
+            } else {
+                // Hide the unsupported message and display supported content
+                unsupportedMessage.style.display = 'none';
+                supportedContent.style.display = 'block';
+            }
+        }
+
+        // Check the window size initially and add a listener for window resize
+        checkWindowSize();
+        window.addEventListener('resize', checkWindowSize);
+    </script>
+</body>
+
+</html>
